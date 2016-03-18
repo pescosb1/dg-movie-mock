@@ -11,6 +11,8 @@ http://www.omdbapi.com/?s=Batman
 Take those results and look up details for each movie returned using this api pattern:
 http://www.omdbapi.com/?i=tt0372784 (where i = the imdb id found above)
 
-Build using Angular.js version [1.2.18](https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js) (with at least one Directive) and SASS compiled to CSS.
+Images will be blocked from hotlinking. Manually download all of those images to the project first, then reference them locally (parse the url string from the response).
+
+Build using Angular.js version [1.2.18](https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js) (with at least one Directive) and SASS compiled to CSS. Make sure your JS is supported by IE8+ and your CSS is supported by IE9+.
 
 Fork this project and include your code in a pull request.
