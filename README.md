@@ -1,8 +1,7 @@
 #Task:
 Display a vertical list of ten movies which can also be filtered by decade.
 
-A UI mockup can be found in a Sketch file here:
-https://www.dropbox.com/s/galt5w99xvvz757/moviemock.sketch?dl=0
+A UI mockup can be found in the included moviemock.sketch file (or moviemock.pdf if you don't have Sketch).
 Only one movie is shown in the mockup, but use that as a template for the other 9.
 
 Using the first 10 results of this api search for batman movies:
