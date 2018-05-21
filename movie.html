@@ -1,0 +1,26 @@
+<div>
+  <div id="sortButtons">
+       <div>
+            <button ng-click="displayByYear('2000')" id="year2000" title="Show Movies in 2000's" >2000's</button>
+       </div>
+       <div>
+            <button ng-click="displayByYear('1990')" id="year1990" title="Show Movies in 1990's">1990's</button>
+       </div>
+  </div>
+  {{ error }}
+  <div id="moviesContainer">
+    <div class="moviesRow sort-{{movie.Year}}" ng-repeat="movie in movies | orderBy:'-Year'">
+        <div class="moviePoster">
+              <img src="{{movie.posterImage}}" alt="{{movie.Title}}" />
+        </div>
+        <div class="movieInfo">
+          <h1>{{movie.Title}}</h1>
+          <div ng-controller="MovieDetailsController">
+              
+            <ng-include src="'movie-details.html'" ></ng-include>
+          </div>
+          <a href="http://www.imdb.com/title/{{movie.imdbID}}" target="_blank" title="View on IMDB">View on IMDB</a>
+        </div>
+    </div>
+  </div>
+</div>

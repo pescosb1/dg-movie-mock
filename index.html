@@ -1,32 +1,43 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Movies</title>
+<html lang="en" ng-app="dgMovieApp">
 
-<script src="https://az168019.vo.msecnd.net/scripts/libs/modernizr.custom.js"></script>
-    <!--[if lte IE 8]>
+<head>
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <title>Movies</title>
+
+     <script src="https://az168019.vo.msecnd.net/scripts/libs/modernizr.custom.js"></script>
+     <!--[if lte IE 8]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.4/es5-shim.min.js"></script>
     <![endif]-->
-    <!--[if lte IE 9]>
+     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20150503/json2.min.js"></script>
     <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="content/styles/style.css">
 </head>
-<body ng-app="dgMovieApp">
+
+<body>
+     <h1>Movies About Batman</h1>
+     <div ng-view=""></div>
 
 
 
 
-
-<!--[if gt IE 8]><!-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!--<![endif]-->
-<!--[if lte IE 8]>
+     <!--[if gt IE 8]><!-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <!--<![endif]-->
+     <!--[if lte IE 8]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <![endif]-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js"></script>
-<script src="scripts/app.js"></script>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js"></script> -->
+     <script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
+     <script data-require="angular-route@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
+     <script src="scripts/app.js"></script>
+     <script src="scripts/MovieController.js"></script>
+     <script src="scripts/MovieDetailsController.js"></script>
+     <script src="scripts/ImdbController.js"></script>
 </body>
+
 </html>
