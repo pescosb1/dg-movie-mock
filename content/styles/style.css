@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 400; }
+
+@media screen and (max-width: 991px) {
+  body {
+    font-size: 1.1rem; } }
+
+#sortButtons {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end; }
+  #sortButtons div:first-of-type button {
+    border-radius: 5px 0 0 5px; }
+  #sortButtons div:last-of-type button {
+    border-radius: 0 5px 5px 0; }
+  #sortButtons div button {
+    border: 1px solid #666;
+    padding: 10px;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 120px;
+    margin-left: 0;
+    font-weight: 700; }
+    #sortButtons div button:hover {
+      background-color: #303435;
+      color: #fff; }
+  #sortButtons div button.active {
+    background-color: #0071bf;
+    color: #fff; }
+
+#moviesContainer {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 0; }
+  #moviesContainer .moviesRow {
+    background-color: #E7EAED;
+    border: 3px solid #303435;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    display: block; }
+    #moviesContainer .moviesRow .showDecade {
+      display: none; }
+    #moviesContainer .moviesRow .moviePoster {
+      width: 20%;
+      display: inline-block; }
+      #moviesContainer .moviesRow .moviePoster img {
+        max-width: 85%;
+        height: auto;
+        border-radius: 10px; }
+    #moviesContainer .moviesRow .movieInfo {
+      display: inline-block;
+      width: 79%;
+      vertical-align: top; }
+      #moviesContainer .moviesRow .movieInfo h1 {
+        font-family: "Lato", sans-serif;
+        margin-top: 0;
+        margin-bottom: 8px;
+        border-bottom: 2px #aaa solid;
+        font-size: 2.2rem;
+        font-weight: 700; }
+      #moviesContainer .moviesRow .movieInfo a {
+        padding: 15px;
+        color: #fff;
+        text-align: center;
+        background-color: #f5c518;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border-radius: 10px;
+        text-decoration: none;
+        float: right;
+        width: 300px; }
+        #moviesContainer .moviesRow .movieInfo a:hover {
+          color: #fff;
+          text-decoration: none;
+          opacity: 0.8; }
+        #moviesContainer .moviesRow .movieInfo a:visited {
+          color: #fff;
+          text-decoration: none;
+          opacity: 0.8; }
+      #moviesContainer .moviesRow .movieInfo .movieRating {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        color: #666;
+        padding: 5px;
+        width: 80px;
+        border: 1px solid #666;
+        border-radius: 5px;
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0; }
+      #moviesContainer .moviesRow .movieInfo .movieRuntime {
+        font-size: 1.1rem;
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0; }
+      #moviesContainer .moviesRow .movieInfo .movieReleased {
+        font-size: 1.1rem;
+        width: 130px;
+        float: right;
+        text-align: right;
+        margin-top: 0;
+        margin-bottom: 0; }
+
+@media screen and (max-width: 991px) {
+  #moviesContainer .moviesRow .movieInfo h1 {
+    font-size: 1.8rem; }
+  #moviesContainer .moviesRow .movieInfo .movieRating {
+    font-size: 1rem; }
+  #moviesContainer .moviesRow .movieInfo .movieRuntime {
+    font-size: 1rem; }
+  #moviesContainer .moviesRow .movieInfo .movieReleased {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 700px) {
+  #moviesContainer .moviesRow .moviePoster {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px; }
+    #moviesContainer .moviesRow .moviePoster img {
+      width: 250px; }
+  #moviesContainer .moviesRow .movieInfo {
+    width: 100%;
+    display: block; }
+    #moviesContainer .moviesRow .movieInfo h1 {
+      font-size: 1.8rem; }
+    #moviesContainer .moviesRow .movieInfo .movieRating {
+      font-size: 1rem; }
+    #moviesContainer .moviesRow .movieInfo .movieRuntime {
+      font-size: 1rem; }
+    #moviesContainer .moviesRow .movieInfo .movieReleased {
+      font-size: 1rem; }
+    #moviesContainer .moviesRow .movieInfo a {
+      width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  #moviesContainer .moviesRow .movieInfo h1 {
+    font-size: 1.4rem; }
+  #moviesContainer .moviesRow .movieInfo .movieRating {
+    display: block;
+    margin-bottom: 8px; }
+  #moviesContainer .moviesRow .movieInfo .movieRuntime {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left; }
+  #moviesContainer .moviesRow .movieInfo .movieReleased {
+    display: block;
+    float: none;
+    text-align: left; } }
